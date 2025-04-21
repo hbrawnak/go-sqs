@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  producer:
+    build:
+      context: .
+      dockerfile: producer/Dockerfile
+    container_name: go-sqs-producer
+    env_file: .env
+    volumes:
+      - ./.env:/app/.env
+
+  consumer:
+    build:
+      context: .
+      dockerfile: consumer/Dockerfile
+    container_name: go-sqs-consumer
+    env_file: .env
+    volumes:
+      - ./.env:/app/.env
