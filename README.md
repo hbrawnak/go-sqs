@@ -1,4 +1,4 @@
-#### GO-SQS
+## GO-SQS
 
 A simple project where I experimented with AWS SQS (Simple Queue Service) and Golang.
 It demonstrates basic concepts like message production, consumption, concurrency, and error handling with SQS queues.
